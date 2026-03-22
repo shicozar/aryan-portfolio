@@ -9,7 +9,7 @@
   padding: 18px;
 }
 .treeTitle, .invTitle {
-  font-size: 6px;
+  font-size: 8px;
   letter-spacing: 2px;
   margin-bottom: 14px;
   border-bottom: 1px solid var(--navy3);
@@ -29,7 +29,7 @@
 }
 .sk:hover { border-color: var(--red); }
 .skIcon { font-size: 18px; display: block; margin-bottom: 5px; line-height: 1; }
-.skName { color: var(--muted); font-size: 5px; display: block; margin-bottom: 6px; letter-spacing: 0.5px; }
+.skName { color: var(--muted); font-size: 7px; display: block; margin-bottom: 6px; letter-spacing: 0.5px; }
 
 .dots { display: flex; justify-content: center; gap: 3px; }
 .dot { width: 7px; height: 7px; background: #1a2a3a; border: 1px solid var(--navy4); }
@@ -42,17 +42,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 10px;
+  padding: 10px 12px;
   border: 1px solid var(--navy3);
   margin-bottom: 6px;
   background: #0a1020;
   transition: border-color 0.15s;
 }
 .invItem:hover { border-color: var(--teal); }
-.invName { color: var(--muted); font-size: 5px; letter-spacing: 0.5px; }
+.invName { color: var(--muted); font-size: 7px; letter-spacing: 0.5px; }
 
 .badge {
-  font-size: 5px;
+  font-size: 6px;
   padding: 3px 7px;
   font-family: 'Press Start 2P', monospace;
 }
