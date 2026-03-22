@@ -1,0 +1,46 @@
+.section { max-width: 960px; margin: 0 auto; padding: 80px 24px; }
+
+.item {
+  background: var(--navy2);
+  border-left: 4px solid var(--red);
+  padding: 20px 22px 20px 26px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.arrow {
+  position: absolute;
+  left: -13px;
+  top: 18px;
+  color: var(--red);
+  font-size: 10px;
+  background: var(--navy);
+  padding: 2px 0;
+  line-height: 1;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.role { color: #fff; font-size: 8px; letter-spacing: 1px; }
+.date { color: var(--yellow); font-size: 6px; flex-shrink: 0; }
+.company { color: var(--teal); font-size: 7px; margin-bottom: 14px; }
+
+.bullets { list-style: none; }
+.bullets li {
+  color: var(--muted);
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  padding: 3px 0 3px 18px;
+  position: relative;
+  line-height: 1.55;
+}
+.bullets li::before {
+  content: '>';
+  position: absolute;
+  left: 0;
+  color: var(--red);
+}

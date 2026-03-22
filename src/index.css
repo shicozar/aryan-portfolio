@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
+:root {
+  --red: #e94560;
+  --teal: #4ecdc4;
+  --yellow: #f5a623;
+  --navy: #0a0a16;
+  --navy2: #16213e;
+  --navy3: #0f3460;
+  --navy4: #30475e;
+  --text: #e8e8e8;
+  --muted: #a8dadc;
+  --dim: #607080;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Press Start 2P', monospace;
+  background: var(--navy);
+  color: var(--text);
+  overflow-x: hidden;
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Crect x='6' y='0' width='4' height='16' fill='%23e94560'/%3E%3Crect x='0' y='6' width='16' height='4' fill='%23e94560'/%3E%3C/svg%3E") 8 8, crosshair;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 3px,
+    rgba(0, 0, 0, 0.08) 3px,
+    rgba(0, 0, 0, 0.08) 4px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--navy); }
+::-webkit-scrollbar-thumb { background: var(--red); }
+
+a { cursor: pointer; }

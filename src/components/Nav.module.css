@@ -1,0 +1,93 @@
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background: var(--navy2);
+  border-bottom: 3px solid var(--red);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 32px;
+  height: 52px;
+  transition: box-shadow 0.2s;
+}
+.scrolled {
+  box-shadow: 0 4px 24px rgba(233,69,96,0.15);
+}
+.logo {
+  color: var(--red);
+  font-size: 9px;
+  letter-spacing: 2px;
+  flex-shrink: 0;
+}
+.logo span { color: var(--yellow); }
+
+.links {
+  display: flex;
+  gap: 4px;
+  margin-left: auto;
+}
+.link {
+  background: none;
+  border: 1px solid transparent;
+  color: var(--muted);
+  font-family: 'Press Start 2P', monospace;
+  font-size: 6px;
+  letter-spacing: 1px;
+  padding: 5px 9px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.link:hover {
+  color: #fff;
+  border-color: var(--red);
+  background: rgba(233,69,96,0.12);
+}
+.credit {
+  color: var(--dim);
+  font-size: 6px;
+  animation: blink 1.2s step-end infinite;
+  flex-shrink: 0;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
+.hamburger {
+  display: none;
+  background: none;
+  border: 1px solid var(--red);
+  color: var(--red);
+  font-family: 'Press Start 2P', monospace;
+  font-size: 10px;
+  padding: 4px 8px;
+  cursor: pointer;
+  margin-left: auto;
+}
+.mobile {
+  position: absolute;
+  top: 52px; left: 0; right: 0;
+  background: var(--navy2);
+  border-bottom: 3px solid var(--red);
+  display: flex;
+  flex-direction: column;
+  padding: 12px 24px;
+  gap: 4px;
+}
+.mobileLink {
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--navy3);
+  color: var(--muted);
+  font-family: 'Press Start 2P', monospace;
+  font-size: 7px;
+  padding: 10px 0;
+  cursor: pointer;
+  text-align: left;
+  letter-spacing: 1px;
+}
+.mobileLink:hover { color: var(--red); }
+
+@media (max-width: 640px) {
+  .links { display: none; }
+  .credit { display: none; }
+  .hamburger { display: block; }
+}

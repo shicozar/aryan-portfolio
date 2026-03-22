@@ -1,0 +1,9 @@
+.footer {
+  background: var(--navy2);
+  border-top: 3px solid var(--navy3);
+  text-align: center;
+  padding: 20px;
+  font-size: 6px;
+  color: var(--dim);
+}
+.red { color: var(--red); }

@@ -1,0 +1,48 @@
+.section { max-width: 960px; margin: 0 auto; padding: 80px 24px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+@media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
+
+.card {
+  background: var(--navy2);
+  border: 2px solid var(--navy3);
+  padding: 18px;
+  transition: border-color 0.15s;
+}
+.card:hover { border-color: var(--red); }
+
+.label { color: var(--red); font-size: 6px; letter-spacing: 2px; margin-bottom: 10px; }
+.val {
+  color: var(--text);
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  line-height: 1.7;
+  white-space: pre-line;
+}
+
+.stats { display: flex; gap: 12px; flex-wrap: wrap; }
+.statBox {
+  background: var(--navy3);
+  border: 2px solid var(--red);
+  padding: 14px 18px;
+  text-align: center;
+  flex: 1;
+  min-width: 100px;
+}
+.statNum {
+  color: var(--yellow);
+  font-size: 18px;
+  display: block;
+  margin-bottom: 8px;
+}
+.statLabel {
+  color: var(--muted);
+  font-size: 6px;
+  line-height: 2;
+  white-space: pre-line;
+}
