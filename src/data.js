@@ -33,6 +33,7 @@ export const data = {
     { icon: '🔷', name: 'TYPESCRIPT', level: 4, color: 't' },
     { icon: '🍃', name: 'SPRING BOOT',level: 3, color: 't' },
     { icon: '⚡', name: 'C++',        level: 4, color: 't' },
+    { icon: '🟨', name: 'JAVA',        level: 4, color: 't' },
   ],
 
   devops: [

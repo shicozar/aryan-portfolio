@@ -23,6 +23,12 @@ export default function Hero() {
             ▶ VIEW QUESTS
           </button>
           <button className={styles.btnOutline} onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
+            RESUME
+          </button>
+          <a href="/resume.pdf" target="_blank" rel="noreferrer" className={styles.btnOutline}>
+           RESUME
+          </a>
+          <button className={styles.btnOutline} onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
             CONTACT ME
           </button>
           <a href={`mailto:${data.email}`} className={styles.btnHire}>
