@@ -22,9 +22,6 @@ export default function Hero() {
           <button className={styles.btnPrimary} onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}>
             ▶ VIEW QUESTS
           </button>
-          <button className={styles.btnOutline} onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
-            RESUME
-          </button>
           <a href="/resume.pdf" target="_blank" rel="noreferrer" className={styles.btnOutline}>
            RESUME
           </a>
